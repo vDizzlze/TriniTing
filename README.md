@@ -1,0 +1,2 @@
+# TriniTing
+Trivia Game
