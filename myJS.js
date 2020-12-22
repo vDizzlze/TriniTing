@@ -10,7 +10,13 @@
 	const gamePanel = document.getElementById('gamePanel');
 	const aboutPanel = document.getElementById('aboutPanel');
 	const leaderPanel = document.getElementById('leaderPanel');
-	
+	const transitionPanel = document.getElementById('transitionPanel');
+	let transition = function() {
+		if(transitionPanel.style.left == "-50%") {
+			return "150%";
+		}
+		return "-50%";
+	};
 
 	
 
@@ -23,6 +29,9 @@
 
 	let currentNavBtn = gameBtn;
 	let gameOn = false;
+	let name;
+	let category;
+	let difficulty;
 
 	function hidePanels(item) {
 		item.style.display = "none";
@@ -64,6 +73,7 @@
 			gamePanel.style.display = "initial";
 			gameBtn.disabled = true;
 			currentNavBtn = gameBtn;
+			transitionPanel.style.left = transition();
 		}
 		else {
 			let panels = document.querySelectorAll('#gamePanel, #leaderPanel, #aboutPanel');
@@ -75,6 +85,7 @@
 			startPanel.style.display = "initial";
 			gameBtn.disabled = true;
 			currentNavBtn = gameBtn;
+			transitionPanel.style.left = transition();
 		}
 	}
 
@@ -89,6 +100,7 @@
 		leaderPanel.style.display = "initial";
 		leaderBtn.disabled = true;
 		currentNavBtn = leaderBtn;
+		transitionPanel.style.left = transition();
 	}
 
 	aboutBtn.onclick = function() {
@@ -102,10 +114,15 @@
 		aboutPanel.style.display = "initial";
 		aboutBtn.disabled = true;
 		currentNavBtn = aboutBtn;
+		transitionPanel.style.left = transition();
 	}
 
 	startBtn.onclick = function() {
-		
+		name = document.getElementById('name').value;
+		category = document.getElementById('category').value;
+		difficulty = document.getElementById('difficulty').value;
+		startPanel.style.display = "none";
+		gamePanel.style.display = "initial";
 	}
 	
 
