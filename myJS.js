@@ -70,10 +70,11 @@
 			buttons.forEach(resetBtns)
 			document.querySelector('#gameBtn').style.backgroundColor = "black";
 			document.querySelector('#gameBtn').style.color = "white";
+			transitionPanel.style.left = transition();
 			gamePanel.style.display = "initial";
 			gameBtn.disabled = true;
 			currentNavBtn = gameBtn;
-			transitionPanel.style.left = transition();
+			
 		}
 		else {
 			let panels = document.querySelectorAll('#gamePanel, #leaderPanel, #aboutPanel');
@@ -82,10 +83,11 @@
 			buttons.forEach(resetBtns)
 			document.querySelector('#gameBtn').style.backgroundColor = "black";
 			document.querySelector('#gameBtn').style.color = "white";
+			transitionPanel.style.left = transition();
 			startPanel.style.display = "initial";
 			gameBtn.disabled = true;
 			currentNavBtn = gameBtn;
-			transitionPanel.style.left = transition();
+			
 		}
 	}
 
@@ -96,11 +98,10 @@
 		buttons.forEach(resetBtns)
 		document.querySelector('#leaderBtn').style.backgroundColor = "black";
 		document.querySelector('#leaderBtn').style.color = "white";
-
+		transitionPanel.style.left = transition();
 		leaderPanel.style.display = "initial";
 		leaderBtn.disabled = true;
 		currentNavBtn = leaderBtn;
-		transitionPanel.style.left = transition();
 	}
 
 	aboutBtn.onclick = function() {
@@ -110,11 +111,10 @@
 		buttons.forEach(resetBtns)
 		document.querySelector('#aboutBtn').style.backgroundColor = "black";
 		document.querySelector('#aboutBtn').style.color = "white";
-
+		transitionPanel.style.left = transition();
 		aboutPanel.style.display = "initial";
 		aboutBtn.disabled = true;
 		currentNavBtn = aboutBtn;
-		transitionPanel.style.left = transition();
 	}
 
 	startBtn.onclick = function() {
