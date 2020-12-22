@@ -193,7 +193,7 @@ nav {
 #gameSetup form input, #gameSetup form select, #gameSetup form select optgroup, #gameSetup form select optgroup option, #gameSetup form button {
 	background-color: black;
 	border: 0.1rem solid rgba(231, 76, 76, 100);
-	width: 10vw;
+	width: 20%;
 	height: 8vh;
 	font-weight: bold;
 	font-size: 2vw;
