@@ -265,8 +265,14 @@ nav {
 }
 
 #hintBtn {
+	background-color: black;
+	border: 0.1rem solid rgba(231, 76, 76, 100);
+	color: white;
+	width: 120%;
+	height: 5vh;
 	font-size: 1.5vw;
 	font-family: 'Langar', cursive;
+	outline: none;
 }
 
 #audioPlayer {
@@ -289,23 +295,37 @@ nav {
 	font-family: 'Langar', cursive;
 	padding-left: 2rem;
 	height: 7vh;
+	outline: none;
 }
 
-#submitBtn {
+#submitBtn, #skipBtn {
 	background-color: black;
 	border: 0.1rem solid rgba(231, 76, 76, 100);
 	color: white;
-	width: 20%;
-	height: 7vh;
 	width: 15%;
+	height: 7vh;
 	font-size: 1.5vw;
 	font-family: 'Langar', cursive;
+	outline: none;
 }
 
-#submitBtn:hover {
+#submitBtn:hover, #skipBtn:hover, #hintBtn:hover {
 	background-color: rgba(231, 76, 76, 100);
 	color: black;
 	cursor: pointer;
+}
+
+#nameSpan {
+	position: absolute;
+	top: 80% ;
+	left: 16.5%;
+	font-size: 1.5vw;
+}
+
+#skipBtn {
+	position: absolute;
+	top: 88% ;
+	left: 16.5%;
 }
 
 #leaderboardPanel {
