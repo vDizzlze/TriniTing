@@ -67,9 +67,15 @@ nav {
 #gameBtn {
 	color: white;
 	background-color: black;
+	/*text-shadow:
+   -1px -1px 0 rgba(231, 76, 76, 100),  
+    1px -1px 0 rgba(231, 76, 76, 100),
+    -1px 5px 0 rgba(231, 76, 76, 100),
+     1px 1px 0 rgba(231, 76, 76, 100);*/
 }
 
 #startPanel {
+	display: none;
 	position: absolute;
 	top: 65%;
 	left: 50%;
@@ -184,7 +190,7 @@ nav {
 	display: inline;
 }
 
-#gameSetup form input, #gameSetup form select, #gameSetup form select optgroup, #gameSetup form select optgroup option, #gameSetup form button {
+#name, #startForm select, #startForm select optgroup, #startForm select optgroup option, #startBtn {
 	background-color: black;
 	border: 0.1rem solid rgba(231, 76, 76, 100);
 	width: 20%;
@@ -198,16 +204,10 @@ nav {
 	text-align: center;
 }
 
-#gameSetup form input:hover, #gameSetup form select:hover, #gameSetup form button:hover {
+#startForm input:hover, #startForm select:hover, #startBtn:hover {
 	background-color: rgba(231, 76, 76, 100);
 	color: black;
 	cursor: pointer;
-}
-
-#gameSetup form select::selection {
-	cursor: pointer;
-	color: white;
-	background-color: rgba(61, 25, 25, 50);
 }
 
 #startBtn {
@@ -215,7 +215,97 @@ nav {
 }
 
 #gamePanel {
-	display: none;
+	/*display: none;*/
+	color: white;
+	text-align: center;
+	/*font-weight: bold;*/
+	font-family: 'Langar', cursive;
+}
+
+#categorySpan {
+	font-weight: bold;
+	font-size: 3vw;
+	font-family: 'Langar', cursive;
+	position: absolute;
+	top: 20% ;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#scoreSpan, #timeSpan {
+	font-weight: bold;
+	font-size: 2vw;
+	font-family: 'Langar', cursive;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 25%;
+}
+
+#scoreSpan {
+	left: 20%;
+}
+
+#timeSpan {
+	left: 80%;
+}
+
+#questionDiv {
+	position: absolute;
+	top: 35% ;
+	left: 16.5%;
+	font-size: 2vw;
+}
+
+#hintDiv {
+	position: absolute;
+	top: 45% ;
+	left: 16.5%;
+	font-size: 1.5vw;
+	font-family: 'Langar', cursive;
+}
+
+#hintBtn {
+	font-size: 1.5vw;
+	font-family: 'Langar', cursive;
+}
+
+#audioPlayer {
+	position: absolute;
+	top: 55% ;
+	left: 16.5%;
+}
+
+#answerDiv {
+	position: absolute;
+	top: 75% ;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+#answerInput {
+	width: 53%;
+	font-size: 1.5vw;
+	font-family: 'Langar', cursive;
+	padding-left: 2rem;
+	height: 7vh;
+}
+
+#submitBtn {
+	background-color: black;
+	border: 0.1rem solid rgba(231, 76, 76, 100);
+	color: white;
+	width: 20%;
+	height: 7vh;
+	width: 15%;
+	font-size: 1.5vw;
+	font-family: 'Langar', cursive;
+}
+
+#submitBtn:hover {
+	background-color: rgba(231, 76, 76, 100);
+	color: black;
+	cursor: pointer;
 }
 
 #leaderboardPanel {

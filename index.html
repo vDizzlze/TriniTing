@@ -50,26 +50,28 @@
 				</svg>
 			</div>
 			<div id="gameSetup">
-				<form action="#" id="startForm">
+				<form action="#" id="startForm" autocomplete="off">
 					<input type="text" placeholder="Name" required="required" id="name">
-					<select name="Category" id="" required="required" id="category">
-						<optgroup label="Category" id="categorySelect">
-						    <option value="Random" selected="selected">Random</option>
-							<option value="Food">Food</option>
-							<option value="Famous Persons">Famous Persons</option>
-							<option value="Politics">Politics</option>
-							<option value="Geography">Geography</option>
-							<option value="Celebrations">Celebrations</option>
-							<option value="Ancestry">Ancestry</option>
-							<option value="Music">Music</option>
+					<select name="Category" required="required" id="category">
+						<optgroup label="Category:">
+						    <option value="random" selected="selected">Random</option>
+							<option value="0">Food</option>
+							<option value="1">Famous Persons</option>
+							<option value="2">Geography</option>
+							<option value="3">Celebrations</option>
+							<option value="4">Music</option>
 					  	</optgroup>
+					  	<optgroup label="Mode:">
+					  		<option value="ranked">Ranked</option>
+				  		</optgroup>
 						
 					</select>
 					<select name="Difficulty" id="difficultySelect" required="required" id="difficulty">
 						<optgroup label="Difficulty">
-						    <option value="Easy" selected="selected">Easy</option>
-							<option value="Medium">Medium</option>
-							<option value="Hard">Hard</option>
+						    <option value="easy" selected="selected">Easy</option>
+							<option value="medium">Medium</option>
+							<option value="hard">Hard</option>
+							<option value="increasing">Increasing</option>
 					  	</optgroup>
 					</select>
 					<button type="submit" id="startBtn">Start Game</button>
@@ -77,7 +79,23 @@
 			</div>
 		</section>
 		<section id="gamePanel">
-			
+			<div id="topDiv"> <span id="scoreSpan">Score: 0</span> <span id="categorySpan">Music</span> <span id="timeSpan">Time: 10:00</span> </div>
+			<div id="middleDiv">
+				<div id="questionDiv">Q: This is my question?</div>
+				<div id="hintDiv"><button id="hintBtn">Hint</button></div>
+				<div id="attachmentDiv"><audio src="Audio/audio.mp3" controls="controls" id="audioPlayer"></audio></div>
+			</div>
+			<div id="bottomDiv">
+				<div id="answerDiv">
+					<form action="">
+						<input type="text" placeholder="Answer" required="required" id="answerInput">
+						<button type="submit" id="submitBtn">Submit</button>
+					</form>
+				</div>
+				<div id="questionDiv"></div>
+			</div>
+
+
 		</section>
 		<section id="leaderPanel">
 			
