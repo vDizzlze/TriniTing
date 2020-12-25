@@ -279,18 +279,19 @@ nav {
 	position: absolute;
 	top: 55% ;
 	left: 16.5%;
+	width: 15vw;
 }
 
 #answerDiv {
 	position: absolute;
 	top: 75% ;
 	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 100%;
+	transform: translate(-49%, -50%);
+	width: 90%;
 }
 
 #answerInput {
-	width: 53%;
+	width: 60%;
 	font-size: 1.5vw;
 	font-family: 'Langar', cursive;
 	padding-left: 2rem;
@@ -307,9 +308,10 @@ nav {
 	font-size: 1.5vw;
 	font-family: 'Langar', cursive;
 	outline: none;
+	margin-left: 1%;
 }
 
-#submitBtn:hover, #skipBtn:hover, #hintBtn:hover {
+#submitBtn:hover, #skipBtn:hover, #hintBtn:hover, #modalBtns button:hover {
 	background-color: rgba(231, 76, 76, 100);
 	color: black;
 	cursor: pointer;
@@ -326,6 +328,7 @@ nav {
 	position: absolute;
 	top: 88% ;
 	left: 16.5%;
+	margin-left: 0%;
 }
 
 #hangman {
@@ -360,6 +363,51 @@ nav {
 	to {
 		opacity: 0;
 	}
+}
+
+#modalDiv {
+	display: none;
+	position: fixed;
+	top: 10vh;
+	left: 0;
+	/*transform: translate(-50%, -50%);*/
+	width: 100vw;
+	height: 90vh;
+	background-color: rgba(0,0,0,0.9);
+	backdrop-filter: blur(5px);
+	justify-content: center;
+	vertical-align: bottom;
+}
+
+#modal {
+	position: fixed;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50vh;
+	background-color: rgba(231, 76, 76, 0.3);
+}
+
+#modalHead {
+	font-size: 2.5vw;
+	margin-top: 8%;
+}
+
+#modalMsg {
+	margin-top: 3%;
+	font-size: 1.5vw;
+}
+
+#modalBtns button {
+	background-color: black;
+	border: 0.1rem solid rgba(231, 76, 76, 100);
+	color: white;
+	width: 20%;
+	height: 7vh;
+	font-size: 1.5vw;
+	font-family: 'Langar', cursive;
+	outline: none;
+	margin-top: 3%;
 }
 
 #leaderboardPanel {
