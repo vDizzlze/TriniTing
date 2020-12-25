@@ -75,7 +75,7 @@ nav {
 }
 
 #startPanel {
-	display: none;
+	/*display: none;*/
 	position: absolute;
 	top: 65%;
 	left: 50%;
@@ -215,7 +215,7 @@ nav {
 }
 
 #gamePanel {
-	/*display: none;*/
+	display: none;
 	color: white;
 	text-align: center;
 	/*font-weight: bold;*/
