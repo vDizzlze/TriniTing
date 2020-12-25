@@ -328,7 +328,10 @@ nav {
 	left: 16.5%;
 }
 
-.hangman {
+#hangman {
+	position: absolute;
+	top: 35% ;
+	left: 70%;
 	width: 10%;
 }
 
@@ -338,38 +341,25 @@ nav {
 	left: 70%;
 }
 
-.head{
-	position: absolute;
-	top: 40% ;
-	left: 76%;
-	width: 3%;
-}
-
-#aliveHead {
-	display: initial;
-}
-
-#deadHead {
+.deadHead {
 	display: none;
-	position: absolute;
-	top: 42% ;
-	left: 75.5%;
-	width: 4%;
 }
 
-#torso {
-	position: absolute;
-	top: 48.5% ;
-	left: 75.5%;
-	width: 4%;
+.aliveHead {
+
 }
 
-#legs {
-	position: absolute;
-	top: 54.8% ;
-	left: 75.5%;
-	width: 4%;
+.you {
+	animation: blinker 0.5s linear 0s infinite alternate;
 }
+
+@keyframes blinker {
+	from{
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
 }
 
 #leaderboardPanel {
