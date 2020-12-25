@@ -328,6 +328,50 @@ nav {
 	left: 16.5%;
 }
 
+.hangman {
+	width: 10%;
+}
+
+#hanger {
+	position: absolute;
+	top: 35% ;
+	left: 70%;
+}
+
+.head{
+	position: absolute;
+	top: 40% ;
+	left: 76%;
+	width: 3%;
+}
+
+#aliveHead {
+	display: initial;
+}
+
+#deadHead {
+	display: none;
+	position: absolute;
+	top: 42% ;
+	left: 75.5%;
+	width: 4%;
+}
+
+#torso {
+	position: absolute;
+	top: 48.5% ;
+	left: 75.5%;
+	width: 4%;
+}
+
+#legs {
+	position: absolute;
+	top: 54.8% ;
+	left: 75.5%;
+	width: 4%;
+}
+}
+
 #leaderboardPanel {
 	display: none;
 }
