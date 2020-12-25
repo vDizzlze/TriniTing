@@ -279,7 +279,8 @@ nav {
 	position: absolute;
 	top: 55% ;
 	left: 16.5%;
-	width: 15vw;
+	width: 20vw;
+	margin-bottom: 1%;
 }
 
 #answerDiv {
